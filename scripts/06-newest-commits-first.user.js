@@ -1,12 +1,13 @@
 // ==UserScript==
 // @name         GitHub - Newest Commits First in File Picker
 // @namespace    https://github.com/bwcampbell9/better-github
-// @version      1.2.0
+// @version      1.2.1
 // @description  Shows newest commits first in classic and modern Files changed pickers.
 // @author       Bryce Campbell
 // @license      MIT
 // @icon         https://github.githubassets.com/pinned-octocat.svg
-// @match        *://*/*
+// @match        https://github.com/*
+// @match        https://*.ghe.com/*
 // @homepageURL  https://github.com/bwcampbell9/better-github
 // @supportURL   https://github.com/bwcampbell9/better-github/issues
 // @downloadURL  https://raw.githubusercontent.com/bwcampbell9/better-github/refs/heads/users/brycampbell/main/scripts/06-newest-commits-first.user.js

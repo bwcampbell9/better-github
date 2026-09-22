@@ -1,12 +1,13 @@
 // ==UserScript==
 // @name         GitHub - Reorder Pull Request Tabs
 // @namespace    https://github.com/bwcampbell9/better-github
-// @version      1.1.0
+// @version      1.1.1
 // @description  Orders PR tabs as Conversation, Files changed, Checks, Commits.
 // @author       Bryce Campbell
 // @license      MIT
 // @icon         https://github.githubassets.com/pinned-octocat.svg
-// @match        *://*/*
+// @match        https://github.com/*
+// @match        https://*.ghe.com/*
 // @homepageURL  https://github.com/bwcampbell9/better-github
 // @supportURL   https://github.com/bwcampbell9/better-github/issues
 // @downloadURL  https://raw.githubusercontent.com/bwcampbell9/better-github/refs/heads/users/brycampbell/main/scripts/02-pr-tab-order.user.js

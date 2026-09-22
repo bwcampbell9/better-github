@@ -1,12 +1,13 @@
 // ==UserScript==
 // @name         GitHub - Move Merge Box to Top
 // @namespace    https://github.com/bwcampbell9/better-github
-// @version      1.1.0
+// @version      1.1.1
 // @description  Moves the pull request merge box above the conversation.
 // @author       Bryce Campbell
 // @license      MIT
 // @icon         https://github.githubassets.com/pinned-octocat.svg
-// @match        *://*/*
+// @match        https://github.com/*
+// @match        https://*.ghe.com/*
 // @homepageURL  https://github.com/bwcampbell9/better-github
 // @supportURL   https://github.com/bwcampbell9/better-github/issues
 // @downloadURL  https://raw.githubusercontent.com/bwcampbell9/better-github/refs/heads/users/brycampbell/main/scripts/03-merge-box-first.user.js

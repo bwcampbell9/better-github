@@ -45,8 +45,8 @@ small, deliberate changes instead of replacing the interface:
   row.
 - Put PR tabs, comments, commits, merge state, and review actions in a more
   useful order.
-- Work consistently across GitHub.com and self-hosted GitHub Enterprise
-  Server instances.
+- Work consistently across GitHub.com and GitHub Enterprise endpoints under
+  `*.ghe.com`.
 - Preserve GitHub's normal authentication and authorization behavior.
 
 The scripts watch for GitHub's dynamic page updates and reapply their changes
@@ -63,10 +63,8 @@ without requiring a refresh.
 Each script includes update metadata, so Tampermonkey can retrieve future
 versions from this repository.
 
-Because GitHub Enterprise Server can use any hostname, the userscripts request
-access to all web addresses. They immediately exit unless the page identifies
-itself as GitHub through GitHub-specific metadata, and feature logic runs only
-when the expected GitHub page structure is present.
+The userscripts request access only to `github.com` and `*.ghe.com`. They also
+verify GitHub-specific page metadata before running feature logic.
 
 ## Quick install
 
@@ -213,10 +211,10 @@ requests.
 | Safari | Untested |
 | Other userscript managers | Untested |
 
-The scripts support `github.com` and GitHub Enterprise Server installations
-on arbitrary HTTP or HTTPS hostnames. They detect GitHub-specific page
-metadata at runtime before modifying the document. GitHub frequently changes
-its page structure, so a future UI update may require selector changes.
+The scripts support `https://github.com/*` and GitHub Enterprise endpoints
+matching `https://*.ghe.com/*`. They detect GitHub-specific page metadata at
+runtime before modifying the document. GitHub frequently changes its page
+structure, so a future UI update may require selector changes.
 
 ## Privacy and security
 
@@ -238,7 +236,7 @@ If GitHub changes a relevant element and a feature stops working, open an
 [issue](https://github.com/bwcampbell9/better-github/issues) with:
 
 - The affected script.
-- The GitHub.com or GitHub Enterprise Server page type.
+- The GitHub.com or `*.ghe.com` page type.
 - A screenshot of the current UI.
 - Any errors shown in the Firefox developer console.
 

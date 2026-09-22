@@ -1,12 +1,13 @@
 // ==UserScript==
 // @name         GitHub - Direct Pull Request Approve Button
 // @namespace    https://github.com/bwcampbell9/better-github
-// @version      1.1.0
+// @version      1.1.1
 // @description  Adds a one-click Approve button to every PR tab without navigating to Files changed.
 // @author       Bryce Campbell
 // @license      MIT
 // @icon         https://github.githubassets.com/pinned-octocat.svg
-// @match        *://*/*
+// @match        https://github.com/*
+// @match        https://*.ghe.com/*
 // @homepageURL  https://github.com/bwcampbell9/better-github
 // @supportURL   https://github.com/bwcampbell9/better-github/issues
 // @downloadURL  https://raw.githubusercontent.com/bwcampbell9/better-github/refs/heads/users/brycampbell/main/scripts/08-direct-approve-button.user.js

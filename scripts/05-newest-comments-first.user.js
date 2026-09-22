@@ -1,12 +1,13 @@
 // ==UserScript==
 // @name         GitHub - Newest Pull Request Comments First
 // @namespace    https://github.com/bwcampbell9/better-github
-// @version      1.1.0
+// @version      1.1.1
 // @description  Shows the newest PR conversation comments before older comments.
 // @author       Bryce Campbell
 // @license      MIT
 // @icon         https://github.githubassets.com/pinned-octocat.svg
-// @match        *://*/*
+// @match        https://github.com/*
+// @match        https://*.ghe.com/*
 // @homepageURL  https://github.com/bwcampbell9/better-github
 // @supportURL   https://github.com/bwcampbell9/better-github/issues
 // @downloadURL  https://raw.githubusercontent.com/bwcampbell9/better-github/refs/heads/users/brycampbell/main/scripts/05-newest-comments-first.user.js
