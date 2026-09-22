@@ -17,7 +17,7 @@
     <img alt="Tampermonkey" src="https://img.shields.io/badge/userscript-Tampermonkey-00485B?logo=tampermonkey&amp;logoColor=white">
   </a>
   <a href="#quick-install">
-    <img alt="Seven features" src="https://img.shields.io/badge/features-7-238636">
+    <img alt="Eight features" src="https://img.shields.io/badge/features-8-238636">
   </a>
   <a href="LICENSE">
     <img alt="MIT license" src="https://img.shields.io/badge/license-MIT-0969DA">
@@ -78,7 +78,8 @@ when the expected GitHub page structure is present.
 | [Comment Box After Summary](#4-comment-box-after-the-pr-summary) | Places the comment composer directly below the PR summary | [**Install**](https://raw.githubusercontent.com/bwcampbell9/better-github/refs/heads/users/brycampbell/main/scripts/04-comment-box-after-summary.user.js) |
 | [Newest Comments First](#5-newest-comments-first) | Shows the latest loaded PR comments first | [**Install**](https://raw.githubusercontent.com/bwcampbell9/better-github/refs/heads/users/brycampbell/main/scripts/05-newest-comments-first.user.js) |
 | [Newest Commits First](#6-newest-commits-first) | Reverses the Files changed commit picker | [**Install**](https://raw.githubusercontent.com/bwcampbell9/better-github/refs/heads/users/brycampbell/main/scripts/06-newest-commits-first.user.js) |
-| [Direct Approve Button](#7-direct-approve-button) | Approves a PR from any tab without opening the review dialog | [**Install**](https://raw.githubusercontent.com/bwcampbell9/better-github/refs/heads/users/brycampbell/main/scripts/08-direct-approve-button.user.js) |
+| [Merge Box Check Actions](#7-merge-box-check-actions) | Adds quick actions to a supported check | [**Install**](https://raw.githubusercontent.com/bwcampbell9/better-github/refs/heads/users/brycampbell/main/scripts/07-pop-links-in-merge-box.user.js) |
+| [Direct Approve Button](#8-direct-approve-button) | Approves a PR from any tab without opening the review dialog | [**Install**](https://raw.githubusercontent.com/bwcampbell9/better-github/refs/heads/users/brycampbell/main/scripts/08-direct-approve-button.user.js) |
 
 ## Feature details
 
@@ -171,7 +172,16 @@ stable newest-first order even when the picker is rerendered.
 
 ![Before and after: newest commits appear first in the Files changed picker](docs/images/06-newest-commits-first.png)
 
-### 7. Direct Approve Button
+### 7. Merge Box Check Actions
+
+[**Install userscript**](https://raw.githubusercontent.com/bwcampbell9/better-github/refs/heads/users/brycampbell/main/scripts/07-pop-links-in-merge-box.user.js)
+·
+[View source](scripts/07-pop-links-in-merge-box.user.js)
+
+Adds quick action links beside a supported pull request check. It remains
+inactive when that check is not present.
+
+### 8. Direct Approve Button
 
 [**Install userscript**](https://raw.githubusercontent.com/bwcampbell9/better-github/refs/heads/users/brycampbell/main/scripts/08-direct-approve-button.user.js)
 ·
@@ -214,7 +224,7 @@ its page structure, so a future UI update may require selector changes.
 - No script reads or stores a personal access token.
 - The Direct Approve feature uses the existing authenticated, same-origin
   GitHub browser session.
-- Scripts make no cross-origin network requests.
+- Scripts make no background cross-origin network requests.
 - The source for every installed script is visible in this repository and in
   Tampermonkey.
 
