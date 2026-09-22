@@ -179,6 +179,8 @@ stable newest-first order even when the picker is rerendered.
 Adds quick action links beside a supported pull request check. It remains
 inactive when that check is not present.
 
+![Before and after: quick actions added to a supported merge-box check](docs/images/07-pop-links-in-merge-box.png)
+
 ### 8. Direct Approve Button
 
 [**Install userscript**](https://raw.githubusercontent.com/bwcampbell9/better-github/refs/heads/users/brycampbell/main/scripts/08-direct-approve-button.user.js)
